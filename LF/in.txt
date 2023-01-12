@@ -1,0 +1,25 @@
+fn aluga (arthur bool) : int {
+    var x : int;
+    var y : float = -1;
+};
+
+fn paga (pedro bool) : float {
+    pedro = false;
+    return 0;
+};
+
+//comentario
+
+fn vende (yuri float) : bool {
+    arthur = true;
+    while (x == y) {
+        if (true) {
+            julia = 3;
+        }
+        else{
+            joao=2+2;
+        }
+    }
+};
+
+/* oi /* comentario dentro de comentario */ tchau */

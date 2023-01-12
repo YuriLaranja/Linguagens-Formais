@@ -1,0 +1,89 @@
+booleano --> Tipo
+identificadores Tipo --> Parametros
+inteiro --> Tipo
+
+inteiro --> Tipo
+variavel identificadores dois_pontos Tipo ponto_virgula --> Var
+Var --> Variaveis
+
+ponto_flutuante --> Tipo
+literais_float --> Exp
+variavel identificadores dois_pontos Tipo igual Exp ponto_virgula --> Var
+Variaveis Var --> Variaveis
+
+vazio --> Comando
+Comando --> Comandos
+Variaveis Comandos --> Definicao
+funcao identificadores abre_parenteses Parametros fecha_parenteses dois_pontos Tipo abre_chaves Definicao fecha_chaves ponto_virgula --> funcao
+funcao --> decl
+
+
+booleano --> Tipo
+identificadores Tipo --> Parametros
+ponto_flutuante --> Tipo
+
+vazio --> Variaveis
+falso --> Exp
+identificadores igual Exp ponto_virgula --> Atribuicao
+Atribuicao --> Comando
+Comando --> Comandos
+
+literais_inteiros --> Exp
+retorna Exp ponto_virgula --> Comando
+Variaveis Var --> Comanos
+
+Variaveis Comandos --> Definicao
+funcao identificadores abre_parenteses Parametros fecha_parenteses dois_pontos Tipo abre_chaves Definicao fecha_chaves ponto_virgula --> funcao
+funcao --> decl
+
+
+
+ponto_flutuante --> Tipo
+identificadores Tipo --> Parametros
+booleano --> Tipo
+
+vazio --> Variaveis
+verdadeiro --> Exp
+identificadores igual Exp ponto_virgula --> Atribuicao
+Atribuicao --> Comando
+Comando --> Comandos
+
+identificadores --> Exp
+igualdade --> Comparador
+identificadores --> Exp
+exp comparador exp --> Condicao
+
+verdadeiro --> Condicao
+
+literais_inteiros --> Exp
+identificadores igual Exp ponto_virgula --> Atribuicao
+Atribuicao --> Comando
+Comando --> Comandos
+
+
+
+literais_inteiros --> Exp
+literais_inteiros --> Exp
+Exp operadores_binarios Exp --> Exp
+identificadores igual Exp ponto_virgula --> Atribuicao
+Atribuicao --> Comando
+Comando --> Comandos
+
+se abre_parenteses Condicao fecha_parenteses abre_chaves Comandos fecha_chaves caso_contrario abre_chave Comandos fecha_chave --> condicional
+Condicional --> Comando
+Comando --> Comandos
+
+enquanto abre_parenteses Condicao fecha_parenteses abre_chave Comandos fecha_chave --> laco
+Laco --> Comando
+Variaveis Var --> Comanos
+
+Variaveis Comandos --> Definicao
+funcao identificadores abre_parenteses Parametros fecha_parenteses dois_pontos Tipo abre_chaves Definicao fecha_chaves ponto_virgula --> funcao
+funcao --> decl
+
+
+vazio --> declaracoes
+decl declaracoes --> declaracoes
+decl declaracoes --> declaracoes
+decl declaracoes --> declaracoes
+declaracoes --> program
